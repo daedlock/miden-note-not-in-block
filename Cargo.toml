@@ -1,0 +1,23 @@
+[package]
+name = "keom-clob"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+miden-tx = { version = "0.2", default-features = false }
+uuid = { version = "1.6.1", features = ["serde", "v4"] }
+miden-lib = { version = "0.2", default-features = false }
+miden-objects = { version = "0.2", features = ["serde"] }
+miden-mock = { git = "https://github.com/0xPolygonMiden/miden-base", branch = "next", default-features = false }
+miden-verifyier = { package = "miden-verifier", git = "https://github.com/0xPolygonMiden/miden-vm", branch = "next", default-features = false }
+vm-processor = { package = "miden-processor", git = "https://github.com/0xPolygonMiden/miden-vm", branch = "next", default-features = false }
+miden-client = { version = "0.2", features = ["testing", "concurrent"] }
+tokio = { version = "1.37.0", features = ["full"] }
+hex = "0.4.3"
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+
+
+[build-dependencies]
+assembly = { package = "miden-assembly", git = "https://github.com/0xPolygonMiden/miden-vm", branch = "next", default-features = false }

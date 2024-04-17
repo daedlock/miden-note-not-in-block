@@ -1,0 +1,9 @@
+use.miden::note
+use.miden::tx
+use.miden::account
+use.miden::contracts::wallets::basic->wallet
+
+# REAL CODE IS OMMITTED FOR PRIVACY
+begin
+
+end
